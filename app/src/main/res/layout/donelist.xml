@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B20000"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="21dp">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="SCORE:"
+        android:textColor="#60A7FF"
+        android:textSize="14pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvQuestionsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="No of Questions "
+        android:textColor="#FAE191"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAttemptedQuestions" />
+
+    <TextView
+        android:id="@+id/tvAttemptedQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:text="Attempted Questions :"
+        android:textColor="#FAE191"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
+
+    <TextView
+        android:id="@+id/tvCorrectAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:text="Correct Answer :"
+        android:textColor="#FFFFFF"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionsNumber" />
+
+    <TextView
+        android:id="@+id/tvNegativeMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp"
+        android:text="Wrong Answers :"
+        android:textColor="#F4F4F4"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCorrectAnswers" />
+
+    <ImageButton
+        android:id="@+id/restart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#B20000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_expand_close" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

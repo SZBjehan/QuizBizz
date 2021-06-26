@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="done" type="id" />
+    <item name="total_num" type="id" />
+    <item name="main_question" type="id" />
+    <item name="quiz" type="id" />
+    <item name="done_pop" type="id" />
+    <item name="answers_container" type="id" />
+</resources>
